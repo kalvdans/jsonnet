@@ -1,3 +1,5 @@
+load("@rules_cc//cc:cc_library.bzl", "cc_library")
+
 licenses(["permissive"])
 
 package(default_visibility = ["//visibility:private"])
@@ -8,7 +10,7 @@ cc_library(
         "rapidyaml.cpp",
     ],
     hdrs = [
-        "ryml_all.hpp",
+        "rapidyaml-0.10.0.hpp",
     ],
     includes = ["."],
     visibility = ["//core:__pkg__"],
